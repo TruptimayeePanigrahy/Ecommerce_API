@@ -1,7 +1,9 @@
 const express = require("express")
 const cors=require("cors")
 const { connection } = require("./Config/db")
-const {route}=require("./Routes/userroute")
+const { route } = require("./Routes/userroute")
+const { categoryroute } = require("./Routes/categoryroute")
+const {productroute}=require("./Routes/productroute")
 const app = express()
 require("dotenv").config()
 app.use(express.json())
@@ -15,6 +17,10 @@ app.get("/", (req, res) => {
 })
 
 app.use("/user",route)
+app.use("/category",categoryroute)
+app.use("/product",productroute)
+
+
 
 
 
