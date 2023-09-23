@@ -39,12 +39,26 @@ Before you begin, ensure you have the following prerequisites:
 
 ### Installation
 
-1. Clone the repository:
+1.Clone the repository:
 
-   ```bash
-   git clone <repository-url>
-   cd ecommerce-api
-   npm install
+git clone https://github.com/yash-levi1896/E-commerce-API.git
+
+Navigate to the project directory:
+
+cd E-commerce-API
+
+Install dependencies:
+
+npm install
+
+Create a .env file in the project root and configure your environment variables:
+
+port = any port number
+mongourl=your-mongodb-connection-uri
+secret=your-secret-key
+redisurl=your redis lab url
+redispassword= Your redis password
+
 
 ### Usage
 

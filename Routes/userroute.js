@@ -140,7 +140,4 @@ route.get("/logout",auth,async (req,res)=>{
 })
 
 
-
-
-
 module.exports={route}
