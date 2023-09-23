@@ -39,7 +39,7 @@ Before you begin, ensure you have the following prerequisites:
 
 ### Installation
 
-<b>1.Clone the repository:</b.
+<b>1.Clone the repository:</b>
 
 git clone https://github.com/TruptimayeePanigrahy/Ecommerce_API.git
 
