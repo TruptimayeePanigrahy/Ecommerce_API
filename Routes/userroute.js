@@ -8,6 +8,46 @@ const {auth}=require("../Middlewares/auth")
 const route = express.Router()
 
 
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     userschema:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         username:
+ *           type: string
+ *         email:
+ *           type: string
+ *         password:
+ *           type: string
+ */
+
+/**
+ * @swagger
+ * /user/register:
+ *  post:
+ *      summary: To add a new user to the database
+ *      tags: [posts]
+ *      requestBody:
+ *          required: true
+ *          content:
+ *              application/json:
+ *                  schema:
+ *                      $ref: '#/components/schemas/userschema'
+ *      responses:
+ *          200:
+ *              description: The user was successfully added.
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          $ref: '#/components/schemas/userschema'
+ *          400:
+ *              description: Some server error
+ */
+
 route.post("/register", async (req, res) => {
     try {
         const { username, email, password } = req.body
@@ -24,6 +64,30 @@ route.post("/register", async (req, res) => {
     }
 })
 
+
+
+/**
+ * @swagger
+ * /user/login:
+ *  post:
+ *      summary: To check  user in the database
+ *      tags: [posts]
+ *      requestBody:
+ *          required: true
+ *          content:
+ *              application/json:
+ *                  schema:
+ *                      $ref: '#/components/schemas/userschema'
+ *      responses:
+ *          200:
+ *              description: The user was successfully checked.
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          $ref: '#/components/schemas/userschema'
+ *          400:
+ *              description: Some server error
+ */
 route.post("/login", async (req, res) => {
     try {
         let { email, password } = req.body
@@ -43,6 +107,26 @@ route.post("/login", async (req, res) => {
         res.status(400).send({ "msg": error })
     }
 })
+
+/**
+ * @swagger
+ * /user/logout:
+ *   get:
+ *     summary: Logout user from the system.
+ *     responses:
+ *       200:
+ *         description: Logout successful.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   description: A message indicating the logout was successful.
+ */
+
+
 
 route.get("/logout",auth,async (req,res)=>{
     try {

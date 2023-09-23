@@ -13,7 +13,24 @@ require("dotenv").config()
 app.use(express.json())
 app.use(cors())
 
+const options={
+    definition:{
+        openapi:"3.0.0",
+        info:{
+            title:"E-commerce API",
+            version:"1.0.0"
+        },
+        servers:[
+            {
+                url:"http://localhost:4700/"
+            }
+        ]
+    },
+    apis:["./Routes/*.js"]
+}
 
+const swaggerSpec = swaggerJSdoc(options)
+app.use("/documentation", swaggerUI.serve, swaggerUI.setup(swaggerSpec))
 
 
 app.get("/", (req, res) => {
