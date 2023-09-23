@@ -50,26 +50,26 @@ Before you begin, ensure you have the following prerequisites:
 
 1.Authentication:
 
-Register: /user/register - Allows users to create an account.
-Login: /user/login - Allows users to log in and receive a JWT token.
-Logout: /user/logout - Logs the user out by invalidating the JWT token.
+Register: /user/register - Allows users to create an account.<br/>
+Login: /user/login - Allows users to log in and receive a JWT token.<br/>
+Logout: /user/logout - Logs the user out by invalidating the JWT token.<br/>
 
 2.Product Management:
 
-Get All Products: /product/getproduct - Retrieves a list of all available products.
-Get Product by ID: product/products/:id - Retrieves product details by ID.
-Get Product by category ID: /product/:categoryid - Retrieves product details by  category ID.
-Add products: /product/addproduct - Add the product.
+Get All Products: /product/getproduct - Retrieves a list of all available products.<br/>
+Get Product by ID: product/products/:id - Retrieves product details by ID.<br/>
+Get Product by category ID: /product/:categoryid - Retrieves product details by  category ID.<br/>
+Add products: /product/addproduct - Add the product.<br/>
 
 3.Cart Management:
 
-Add to Cart: /cart/addcartproduct/ - Adds a product to the user's cart.
-Get Cart Products: /cart/getcartproduct - Retrieves the user's cart items.
-Update Cart Product Quantity: /cart/update-quantity/{product-id} - Updates the quantity of a cart product.
-Delete Cart Product: /cart/delete/:id - Removes a product from the cart.
+Add to Cart: /cart/addcartproduct/ - Adds a product to the user's cart.<br/>
+Get Cart Products: /cart/getcartproduct - Retrieves the user's cart items.<br/>
+Update Cart Product Quantity: /cart/update-quantity/{product-id} - Updates the quantity of a cart product.<br/>
+Delete Cart Product: /cart/delete/:id - Removes a product from the cart.<br/>
 
-4.Order Management:
+4.<b>Order Management</b>:
 
-Place Order: /order/placeorder - Places an order based on the items in the user's cart.
-Get Order History: /order/orderhistory/:id- Retrieves the user's order history.
-Get Order Details: /order/orderDetails/:id - Retrieves the user's order Deatils.
+Place Order: /order/placeorder - Places an order based on the items in the user's cart.<br/>
+Get Order History: /order/orderhistory/:id- Retrieves the user's order history.<br/>
+Get Order Details: /order/orderDetails/:id - Retrieves the user's order Deatils.<br/>
