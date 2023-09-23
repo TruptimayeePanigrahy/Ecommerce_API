@@ -38,7 +38,7 @@ const cartroute = express.Router();
  * /cart/addcartproduct/:
  *  post:
  *      summary: To add a product in the cart
- *      tags: [posts]
+ *      tags: [Cart]
  *      requestBody:
  *          required: true
  *          content:
@@ -252,7 +252,7 @@ cartroute.patch("/decreasequantity/:productid",auth,async(req,res)=>{
 * /cart/delete/:id:
 *   delete:
 *     summary: To delete a product from the cart
-*     tags: [posts]
+*     tags: [Cart]
 *     requestBody:
 *       required: true
 *       content:

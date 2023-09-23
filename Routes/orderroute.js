@@ -51,7 +51,7 @@ const orderRoutes = express.Router();
  * /order/placeOrder/:
  *  post:
  *      summary: To place a order.
- *      tags: [posts]
+ *      tags: [Orders]
  *      requestBody:
  *          required: true
  *          content:

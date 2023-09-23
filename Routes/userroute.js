@@ -30,7 +30,7 @@ const route = express.Router()
  * /user/register:
  *  post:
  *      summary: To add a new user to the database
- *      tags: [posts]
+ *      tags: [users]
  *      requestBody:
  *          required: true
  *          content:
@@ -71,7 +71,7 @@ route.post("/register", async (req, res) => {
  * /user/login:
  *  post:
  *      summary: To check  user in the database
- *      tags: [posts]
+ *      tags: [users]
  *      requestBody:
  *          required: true
  *          content:
@@ -112,6 +112,8 @@ route.post("/login", async (req, res) => {
  * @swagger
  * /user/logout:
  *   get:
+ *     tags: [users]
+ 
  *     summary: Logout user from the system.
  *     responses:
  *       200:

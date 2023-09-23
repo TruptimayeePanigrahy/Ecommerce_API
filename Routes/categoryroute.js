@@ -19,7 +19,7 @@ const categoryroute = express.Router()
  * /category/addcategory/:
  *  post:
  *      summary: To add a new category  to the database
- *      tags: [posts]
+ *      tags: [category]
  *      requestBody:
  *          required: true
  *          content:
@@ -53,6 +53,7 @@ categoryroute.post("/addcategory", async(req, res) => {
  * /category/getcategory:
  *   get:
  *     summary: This route is get all the products from database.
+ *     tags: [category]
  *     responses:
  *       200:
  *         description: The list of all the product.

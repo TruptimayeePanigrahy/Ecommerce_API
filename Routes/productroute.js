@@ -33,7 +33,7 @@ const productroute = express.Router()
  * /product/addproduct/:
  *  post:
  *      summary: To add a new product  to the database
- *      tags: [posts]
+ *      tags: [Products]
  *      requestBody:
  *          required: true
  *          content:
@@ -68,6 +68,7 @@ productroute.post("/addproduct", async (req, res) => {
  * /product/getproduct:
  *   get:
  *     summary: This route is get all the products from database.
+ *     tags: [Products]
  *     responses:
  *       200:
  *         description: The list of all the product.
