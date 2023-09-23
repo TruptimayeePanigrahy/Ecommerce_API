@@ -38,7 +38,7 @@ route.post("/login", async (req, res) => {
 
         let token = jwt.sign({ id: user._id, email: user.email }, process.env.secrete, { expiresIn: "6hr" })
         client.set('token', token, 'EX', 21600);
-        res.status(200).send({"msg":"login successfull","username":user.username,"token":token})
+        res.status(200).send({"msg":"login successfull","username":user.username,"token":token,"userid":user._id})
     } catch (error) {
         res.status(400).send({ "msg": error })
     }

@@ -1,9 +1,13 @@
 const express = require("express")
-const cors=require("cors")
+const cors = require("cors")
+const swaggerJSdoc=require("swagger-jsdoc")
+const swaggerUI=require("swagger-ui-express")
 const { connection } = require("./Config/db")
 const { route } = require("./Routes/userroute")
 const { categoryroute } = require("./Routes/categoryroute")
-const {productroute}=require("./Routes/productroute")
+const { productroute } = require("./Routes/productroute")
+const { cartroute } = require("./Routes/cartroute")
+const {orderRoutes}=require("./Routes/orderroute")
 const app = express()
 require("dotenv").config()
 app.use(express.json())
@@ -19,8 +23,8 @@ app.get("/", (req, res) => {
 app.use("/user",route)
 app.use("/category",categoryroute)
 app.use("/product",productroute)
-
-
+app.use("/cart",cartroute)
+app.use("/order",orderRoutes)
 
 
 

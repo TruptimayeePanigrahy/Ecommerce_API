@@ -9,7 +9,7 @@ const auth=async (req,res,next)=>{
         let token = await client.get('token');
     // console.log(token)
     if(!token){
-        return res.status(400).send({"msg":"please login first147"})
+        return res.status(400).send({"msg":"please login first"})
     }
     let blacktoken=await blackmodel.findOne({token})
     if(blacktoken){
