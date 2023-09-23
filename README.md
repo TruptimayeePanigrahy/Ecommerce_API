@@ -39,19 +39,19 @@ Before you begin, ensure you have the following prerequisites:
 
 ### Installation
 
-1.Clone the repository:
+<b>1.Clone the repository:</b.
 
-git clone https://github.com/yash-levi1896/E-commerce-API.git
+git clone https://github.com/TruptimayeePanigrahy/Ecommerce_API.git
 
-Navigate to the project directory:
+<b>.Navigate to the project directory:</b>
 
 cd E-commerce-API
 
-Install dependencies:
+<b>Install dependencies:</b>
 
 npm install
 
-Create a .env file in the project root and configure your environment variables:
+<b>Create a .env file in the project root and configure your environment variables:</b>
 
 port = any port number
 mongourl=your-mongodb-connection-uri
