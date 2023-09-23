@@ -45,51 +45,51 @@ git clone https://github.com/TruptimayeePanigrahy/Ecommerce_API.git
 
 <b>.Navigate to the project directory:</b>
 
-cd E-commerce-API
+- cd E-commerce-API
 
 <b>Install dependencies:</b>
 
-npm install
+- npm install
 
 <b>Create a .env file in the project root and configure your environment variables:</b>
 
-port = any port number
-mongourl=your-mongodb-connection-uri
-secret=your-secret-key
-redisurl=your redis lab url
-redispassword= Your redis password
+- port = any port number
+- mongourl=your-mongodb-connection-uri
+- secret=your-secret-key
+- redisurl=your redis lab url
+- redispassword= Your redis password
 
 
 ### Usage
 
 <b>1.Authentication:</b>
 
-Register: /user/register - Allows users to create an account.<br/>
-Login: /user/login - Allows users to log in and receive a JWT token.<br/>
-Logout: /user/logout - Logs the user out by invalidating the JWT token.<br/>
+- Register: /user/register - Allows users to create an account.<br/>
+- Login: /user/login - Allows users to log in and receive a JWT token.<br/>
+- Logout: /user/logout - Logs the user out by invalidating the JWT token.<br/>
 
 <b>2.Product Management:</b>
 
-Get All Products: /product/getproduct - Retrieves a list of all available products.<br/>
-Get Product by ID: product/products/:id - Retrieves product details by ID.<br/>
-Get Product by category ID: /product/:categoryid - Retrieves product details by  category ID.<br/>
-Add products: /product/addproduct - Add the product.<br/>
+- Get All Products: /product/getproduct - Retrieves a list of all available products.<br/>
+- Get Product by ID: product/products/:id - Retrieves product details by ID.<br/>
+- Get Product by category ID: /product/:categoryid - Retrieves product details by  category ID.<br/>
+- Add products: /product/addproduct - Add the product.<br/>
 
 <b>3.Cart Management</b>:
 
-Add to Cart: /cart/addcartproduct/ - Adds a product to the user's cart.<br/>
-Get Cart Products: /cart/getcartproduct - Retrieves the user's cart items.<br/>
-Update Cart Product Quantity: /cart/update-quantity/{product-id} - Updates the quantity of a cart product.<br/>
-Delete Cart Product: /cart/delete/:id - Removes a product from the cart.<br/>
+- Add to Cart: /cart/addcartproduct/ - Adds a product to the user's cart.<br/>
+- Get Cart Products: /cart/getcartproduct - Retrieves the user's cart items.<br/>
+- Update Cart Product Quantity: /cart/update-quantity/{product-id} - Updates the quantity of a cart product.<br/>
+- Delete Cart Product: /cart/delete/:id - Removes a product from the cart.<br/>
 
 <b>4.Order Management</b>:
 
-Place Order: /order/placeorder - Places an order based on the items in the user's cart.<br/>
-Get Order History: /order/orderhistory/:id- Retrieves the user's order history.<br/>
-Get Order Details: /order/orderDetails/:id - Retrieves the user's order Deatils.<br/>
+- Place Order: /order/placeorder - Places an order based on the items in the user's cart.<br/>
+- Get Order History: /order/orderhistory/:id- Retrieves the user's order history.<br/>
+- Get Order Details: /order/orderDetails/:id - Retrieves the user's order Deatils.<br/>
 
 
 ### URL'S:-
-1.Backend deployee url:-https://ecommerce-api-0lpk.onrender.com/
+- Backend deployee url:-https://ecommerce-api-0lpk.onrender.com/
 
-2.SwaggerUi documentation url:-https://ecommerce-api-0lpk.onrender.com/documentation/
+- SwaggerUi documentation url:-https://ecommerce-api-0lpk.onrender.com/documentation/
