@@ -73,3 +73,9 @@ Delete Cart Product: /cart/delete/:id - Removes a product from the cart.<br/>
 Place Order: /order/placeorder - Places an order based on the items in the user's cart.<br/>
 Get Order History: /order/orderhistory/:id- Retrieves the user's order history.<br/>
 Get Order Details: /order/orderDetails/:id - Retrieves the user's order Deatils.<br/>
+
+
+### URL'S:-
+1.Backend deployee url:-https://ecommerce-api-0lpk.onrender.com/
+
+2.SwaggerUi documentation url:-https://ecommerce-api-0lpk.onrender.com/documentation/

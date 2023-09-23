@@ -22,7 +22,7 @@ const options={
         },
         servers:[
             {
-                url:"http://localhost:4700/"
+                url:"https://ecommerce-api-0lpk.onrender.com/"
             }
         ]
     },
